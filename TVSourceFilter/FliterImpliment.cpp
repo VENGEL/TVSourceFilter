@@ -51,6 +51,15 @@ void FliterImpliment::GetTVUrl(std::ifstream& ifile) {
     }
 }
 
+std::vector<TVUrl_t>& FliterImpliment::CheckURL()
+{
+    for(std::vector::iterator it = m_TVSrcInput.begin(); it != m_TVSrcInput.end(); it++)
+    {
+
+    }
+    return m_TVSrcOutput;
+}
+
 std::vector<TVUrl_t>& FliterImpliment::GetInputUrl()
 {
     return m_TVSrcInput;
